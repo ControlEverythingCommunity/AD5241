@@ -10,7 +10,7 @@
 // AD5241 I2C address is 0x2C(44)
 #define Addr 0x2C
 
-float resistance = 0.0;
+double resistance = 0.0;
 void setup()
 {
   // Set variable
