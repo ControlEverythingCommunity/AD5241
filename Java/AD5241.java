@@ -22,9 +22,11 @@ public class AD5241
 		// Input resistance value, 0x80(128)
 		device.write(0x00, (byte)0x80);
 		Thread.sleep(500);
-
-		// Convert the data
+		
+		// Read 1 byte of data
 		byte data = (byte)device.read();
+		
+		// Convert the data
 		double resistance = ((data & 0xFF) / 256.0) * 10.0;
 
 		// Output data to screen
