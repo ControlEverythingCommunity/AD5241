@@ -75,6 +75,5 @@ Run the c program.
 ```cpp
 $>./AD5241
 ```
-The code output is the raw values of magnetic field in X, Y and Z axis.
 
 #####The code sets the digital value of resistance.
