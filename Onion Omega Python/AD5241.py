@@ -23,7 +23,7 @@ time.sleep(0.5)
 data = i2c.readBytes(0x2C, 0x00, 1)
 
 # Convert the data
-resistance = (data / 256.0 ) * 10.0
+resistance = (data[0] / 256.0 ) * 10.0
 
 # Output data to screen
 print "Resistance : %.2f K" %resistance
